@@ -1,0 +1,36 @@
+<div mat-dialog-title style="padding: 1rem !important;">
+    <h1 style="text-align: center;">Modal Forms</h1>
+</div>
+<div mat-dialog-content>
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Phone</mat-label>
+            <input matInput placeholder="Phone" formControlName="phone">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input matInput placeholder="Address" formControlName="address">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>City</mat-label>
+            <input matInput placeholder="City" formControlName="city">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>State</mat-label>
+            <input matInput placeholder="State" formControlName="state">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Zip</mat-label>
+            <input matInput placeholder="Zip" formControlName="zip">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+    </form>
+</div>
